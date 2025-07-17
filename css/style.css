@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thread-Core | Social Media Marketing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header id="header">
+    <h1>Thread-Core</h1>
+    <p>We don't just post — we position, power, and push your brand forward.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>About Us</h2>
+      <p>At <strong>Thread-Core</strong>, we specialize in social media marketing that drives engagement, builds brand identity, and converts followers into loyal customers. Whether you’re launching your brand or scaling up, our strategies are data-driven, aesthetic-forward, and ROI-focused.</p>
+    </section>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Social Media Strategy & Planning</li>
+        <li>Content Creation (Photo, Video, Reels, TikToks)</li>
+        <li>Paid Social Ads Management</li>
+        <li>Influencer Marketing & Outreach</li>
+        <li>Analytics & Growth Reports</li>
+      </ul>
+    </section>
+
+    <section class="work">
+      <h2>Recent Campaign Highlights</h2>
+      <span class="image main">
+        <img src="assets/images/campaign1.jpg" alt="Client Growth Chart" />
+      </span>
+      <p>We helped a boutique fashion brand grow from 8K to 50K followers on Instagram in under 3 months with a targeted reel strategy and influencer partnerships. Ask us how.</p>
+    </section>
+
+    <section class="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Standard</h3>
+          <p class="price">£100 / month</p>
+          <ul>
+            <li>3 Posts/Week</li>
+            <li>1 Reel/Month</li>
+            <li>Basic Analytics Report</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Plus</h3>
+          <p class="price">£250 / month</p>
+          <ul>
+            <li>5 Posts/Week</li>
+            <li>2 Reels/Month</li>
+            <li>Influencer Coordination</li>
+            <li>Monthly Growth Report</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p class="price">£500 / month</p>
+          <ul>
+            <li>Daily Content + Stories</li>
+            <li>4 Reels/Month</li>
+            <li>Ad Management</li>
+            <li>Advanced Analytics + Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Let's Talk</h2>
+      <p>Ready to take your brand viral? Reach out and let’s build your Thread-Core together.</p>
+      <p><strong>Email:</strong> hello@threadcore.agency</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/threadcore" target="_blank">@threadcore</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thread-Core. All rights reserved.</p>
+  </footer>
+</body>
+</html>
