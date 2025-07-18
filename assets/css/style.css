@@ -1,0 +1,125 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background: #0d1117;
+  color: white;
+  padding: 60px 20px 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #111827;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+section p,
+section li {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0d1117;
+}
+
+.plan .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 15px;
+}
+
+.plan ul {
+  list-style-type: disc;
+}
+
+.contact a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
