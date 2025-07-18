@@ -195,3 +195,18 @@ footer {
 .contact-details a:hover {
   text-decoration: underline;
 }
+.btn-privacy {
+  display: inline-block;
+  background-color: #007bff; /* blue color */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-privacy:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
