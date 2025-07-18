@@ -129,3 +129,59 @@ footer {
   margin-top: 4em;
   font-size: 0.9em;
 }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  main.contact-page {
+    padding: 0 10px;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+  }
+
+  .contact-info h2, .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  form label {
+    font-size: 1rem;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
