@@ -210,3 +210,39 @@ footer {
 .btn-privacy:hover {
   background-color: #0056b3; /* darker blue on hover */
 }
+.cta-section {
+  background-color: #f4f4f4;
+  padding: 2em;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 3em auto;
+  max-width: 700px;
+}
+
+.cta-section h2 {
+  font-size: 1.8em;
+  color: #222;
+  margin-bottom: 0.5em;
+}
+
+.cta-section p {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 1.5em;
+}
+
+.cta-button {
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.6em;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
