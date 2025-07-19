@@ -16,40 +16,29 @@
     <p>Your growth journey starts with a conversation.</p>
   </header>
 
-  <main class="contact-page">
-    <section class="contact-info">
-      <h2>Let's Work Together</h2>
-      <p>We’re here to answer your questions and explore how Thread-Core can support your social media strategy. Whether you're just starting out or scaling your brand, we’ll help you create a real impact — with no pressure and no overpromising.
-      </p>
+ <main class="contact-container">
+  <section class="contact-form-section">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or want to work with us, fill out the form below or book a free consultation.</p>
 
-      <div class="contact-details">
-        <p><strong>Email:</strong> <a href="mailto:support@thread-core.co.uk">support@thread-core.co.uk</a></p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/threadcore" target="_blank">@threadcore</a></p>
-      </div>
-    </section>
+    <form action="mailto:support@thread-core.co.uk" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+      <button type="submit" class="form-button">Send Message</button>
+    </form>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-    <section class="cta-section">
-  <h2>Book Your Free Consultation</h2>
-  <p>Let’s talk about how Thread-Core can elevate your brand's social media presence. Our free consultation is the first step toward a beautiful, consistent, and engaging online presence.</p>
-  <a href="https://calendly.com/thread-core-support/consultation" target="_blank" class="cta-button">Schedule Now</a>
-</section>
-  </main>
+    <div class="or-divider">— OR —</div>
+
+    <a href="https://calendly.com/thread-core-support/consultation" target="_blank" class="booking-button">Book a Free Consultation</a>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 Thread-Core. All rights reserved.</p>
