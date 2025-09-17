@@ -2,54 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Thread-Core</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Thread-Core | Social Media Marketing Agency" />
+  <title>Contact | Thread-Core</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-     <nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="services.html">Services</a>
-  </nav>
+
+<body class="bg-[#f8f5f0] text-black font-sans">
+
+  <!-- HEADER -->
+  <header class="text-center py-14 bg-white">
+    <h1 class="text-4xl font-bold mb-3">Contact Us</h1>
+    <p class="mb-4 text-lg">We’d love to hear from you.</p>
+    <nav class="space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="contact.html" class="underline font-semibold">Contact</a>
+      <a href="privacy.html" class="hover:underline">Privacy</a>
+      <a href="terms.html" class="hover:underline">Terms</a>
+    </nav>
   </header>
-  
 
-  <main>
-    <section class="contact-form">
-      <h2>Get in Touch</h2>
-      <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
-      <form action="mailto:support@thread-core.co.uk" method="POST" enctype="text/plain">
-        <label for="name">Full Name</label>
-        <input type="text" name="name" id="name" required>
+  <main class="max-w-xl mx-auto py-20 px-6">
 
-        <label for="email">Your Email</label>
-        <input type="email" name="email" id="email" required>
+    <!-- CONTACT FORM -->
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-xl text-black" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-xl text-black" required>
+      <textarea name="message" placeholder="Tell us about your brand" class="w-full p-3 rounded-xl text-black" rows="4" required></textarea>
+      <button type="submit" class="bg-black text-white px-6 py-3 rounded-xl font-semibold">Send</button>
+    </form>
 
-        <label for="message">Your Message</label>
-        <textarea name="message" id="message" rows="6" required></textarea>
+    <div class="mt-10 text-center">
+      <p><strong>Email:</strong> support@thread-core.co.uk</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/threadcore.co.uk" target="_blank" class="underline">@threadcore</a></p>
+    </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <section style="text-align:center; margin-top:2em;">
-      <h2>Want a Free Consultation?</h2>
-      <p>Book a time that works for you – no pressure, just support.</p>
-      <a href="https://calendly.com/thread-core-support/consultation" class="consult-button" target="_blank">Book Free Consultation</a>
-    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Thread-Core. All rights reserved.</p>
-    <p>Thread-Core Ltd | Company No: 12345678 | Registered in England and Wales</p>
-    <p>Registered Office: 123 Example Street, York, UK</p>
-    <p>Email: <a href="mailto:support@thread-core.co.uk">support@thread-core.co.uk</a></p>
-    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="cookie-policy.html">Cookie Policy</a></p>
+  <footer class="bg-black text-white text-center py-6">
+    <p>&copy; 2025 Thread-Core. All rights reserved. <a href="privacy.html" class="underline">Privacy</a> | <a href="terms.html" class="underline">Terms</a></p>
   </footer>
+
 </body>
 </html>
