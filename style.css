@@ -1,3 +1,10 @@
+:root {
+  --primary: #6b4f3b;      /* Warm brown */
+  --accent: #c6a75e;       /* Soft gold */
+  --dark: #1f1f1f;         /* Deep charcoal */
+  --light: #f8f5ef;        /* Cream background */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +17,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #faf8f4;
-  color: #222;
+  background: var(--light);
+  color: var(--dark);
   line-height: 1.6;
 }
 
@@ -26,14 +33,10 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(255,255,255,0.95);
+  background: rgba(248,245,239,0.95);
   backdrop-filter: blur(8px);
   transition: 0.3s;
   z-index: 1000;
-}
-
-.header.shrink {
-  padding: 5px 0;
 }
 
 .nav-container {
@@ -44,18 +47,18 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 65px;
   transition: 0.3s;
 }
 
 .header.shrink .logo {
-  height: 45px;
+  height: 50px;
 }
 
 nav a {
   margin-left: 30px;
   text-decoration: none;
-  color: #333;
+  color: var(--dark);
   font-weight: 500;
   position: relative;
 }
@@ -64,7 +67,7 @@ nav a::after {
   content: "";
   width: 0;
   height: 2px;
-  background: #b88c4a;
+  background: var(--accent);
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -76,7 +79,7 @@ nav a:hover::after {
 }
 
 .btn-nav {
-  border: 1px solid #b88c4a;
+  border: 1px solid var(--accent);
   padding: 6px 15px;
   border-radius: 4px;
 }
@@ -84,7 +87,7 @@ nav a:hover::after {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  background: linear-gradient(rgba(31,31,31,0.55), rgba(31,31,31,0.55)),
               url('images/hero.jpg') center/cover fixed;
   display: flex;
   justify-content: center;
@@ -107,7 +110,7 @@ nav a:hover::after {
 }
 
 .btn-primary {
-  background: #b88c4a;
+  background: var(--accent);
   color: white;
   padding: 12px 28px;
   text-decoration: none;
@@ -116,7 +119,7 @@ nav a:hover::after {
 }
 
 .btn-primary:hover {
-  background: #9e7539;
+  background: var(--primary);
 }
 
 /* SECTIONS */
@@ -126,65 +129,44 @@ nav a:hover::after {
 }
 
 .section.alt {
-  background: #f3efe8;
+  background: #f0ebe2;
 }
 
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
+  color: var(--primary);
 }
 
 .gold-line {
   width: 80px;
   height: 3px;
-  background: #b88c4a;
+  background: var(--accent);
   margin: 20px auto 60px auto;
 }
 
-/* MENU GRID */
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-}
-
-.menu-box {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 14px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+/* MENU IMAGE */
+.menu-image img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   transition: 0.4s ease;
 }
 
-.menu-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
-}
-
-.menu-box h3 {
-  font-family: 'Playfair Display', serif;
-  color: #b88c4a;
-  margin-bottom: 20px;
-}
-
-.menu-box ul {
-  list-style: none;
-}
-
-.menu-box li {
-  margin-bottom: 12px;
-  color: #555;
+.menu-image img:hover {
+  transform: scale(1.02);
 }
 
 /* FOOTER */
 footer {
-  background: #111;
+  background: var(--dark);
   color: white;
   text-align: center;
   padding: 40px 20px;
 }
 
-/* FADE ANIMATION */
+/* SCROLL ANIMATION */
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
@@ -198,7 +180,6 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-
   .hero {
     background-attachment: scroll;
   }
@@ -208,11 +189,11 @@ footer {
     font-size: 0.9rem;
   }
 
-  .logo {
-    height: 50px;
-  }
-
   .section {
     padding: 80px 0;
+  }
+
+  .logo {
+    height: 55px;
   }
 }
