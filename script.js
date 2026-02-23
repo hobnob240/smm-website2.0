@@ -1,16 +1,24 @@
-function revealOnScroll() {
-    const reveals = document.querySelectorAll(".reveal, .menu-card");
+// Fade in on scroll
+const faders = document.querySelectorAll('.fade-in');
 
-    reveals.forEach((element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const revealPoint = 100;
+const appearOptions = {
+  threshold: 0.3
+};
 
-        if (elementTop < windowHeight - revealPoint) {
-            element.classList.add("active");
-        }
-    });
-}
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+// Shrink header on scroll
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  header.classList.toggle('shrink', window.scrollY > 50);
+});
