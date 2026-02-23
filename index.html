@@ -5,57 +5,82 @@
   <title>Family Caterings</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav-container">
-      <img src="images/logo.png" alt="Family Caterings Logo" class="logo">
-      <nav>
-        <a href="#weddings">Weddings</a>
-        <a href="#events">Events</a>
-        <a href="enquiry.html" class="btn">Enquiry</a>
-      </nav>
+<header class="header" id="header">
+  <div class="container nav-container">
+    <img src="images/logo.png" class="logo" alt="Family Caterings">
+    <nav>
+      <a href="#weddings">Weddings</a>
+      <a href="#events">Events</a>
+      <a href="enquiry.html" class="btn-nav">Enquiry</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content fade-in">
+    <h1>From our kitchen to your function</h1>
+    <p>Crafting unforgettable celebrations with elegance and flavour.</p>
+    <a href="enquiry.html" class="btn-primary">Book Your Event</a>
+  </div>
+</section>
+
+<section id="weddings" class="section">
+  <div class="container">
+    <h2 class="fade-in">Wedding Catering</h2>
+    <div class="gold-line"></div>
+
+    <div class="menu-grid">
+      <div class="menu-box fade-in">
+        <h3>Mains</h3>
+        <ul>
+          <li>Slow Roasted Beef</li>
+          <li>Herb Crusted Chicken</li>
+          <li>Vegetarian Wellington</li>
+        </ul>
+      </div>
+
+      <div class="menu-box fade-in">
+        <h3>Sides</h3>
+        <ul>
+          <li>Seasonal Vegetables</li>
+          <li>Garlic & Herb Potatoes</li>
+          <li>Fresh Garden Salad</li>
+        </ul>
+      </div>
+
+      <div class="menu-box fade-in">
+        <h3>Desserts</h3>
+        <ul>
+          <li>Chocolate Torte</li>
+          <li>Sticky Toffee Pudding</li>
+          <li>Seasonal Cheesecake</li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>From our kitchen to your function</h1>
-      <p>Premium catering crafted with love, flavour, and elegance.</p>
-      <a href="enquiry.html" class="btn-primary">Book Your Event</a>
-    </div>
-  </section>
+<section id="events" class="section alt">
+  <div class="container">
+    <h2 class="fade-in">Event Catering</h2>
+    <div class="gold-line"></div>
 
-  <!-- WEDDINGS -->
-  <section id="weddings" class="section">
-    <div class="container">
-      <h2>Wedding Catering</h2>
-      <p>Bespoke menus designed for unforgettable celebrations.</p>
-      <a href="wedding-menu.jpg" class="btn-secondary">View Wedding Menu</a>
-    </div>
-  </section>
+    <p class="fade-in">Corporate events, private dining, and bespoke celebrations delivered with sophistication.</p>
+  </div>
+</section>
 
-  <!-- EVENTS -->
-  <section id="events" class="section alt">
-    <div class="container">
-      <h2>Event Catering</h2>
-      <p>Corporate, private, and special occasion catering with style.</p>
-      <a href="event-menu.jpg" class="btn-secondary">View Event Menu</a>
-    </div>
-  </section>
+<footer>
+  <p>© 2026 Family Caterings | Crafted with passion</p>
+</footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Family Caterings | Crafted with passion</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
