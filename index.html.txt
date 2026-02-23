@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Caterings | Luxury Wedding & Event Catering</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Family Caterings Logo">
+    <nav>
+        <a href="#wedding">Wedding</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="enquiry.html">Enquire</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Rustic Elegance. Unforgettable Celebrations.</h1>
+        <p>From intimate weddings to grand occasions, we deliver refined catering experiences with warmth and abundance.</p>
+        <a href="enquiry.html" class="btn">Book Your Date</a>
+    </div>
+</section>
+
+<section id="wedding" class="reveal">
+    <h2 class="section-title">Wedding Buffet — £30–£35 per guest</h2>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <h3>Welcome Nibbles</h3>
+            <ul>
+                <li>Grazing Boards</li>
+                <li>Halloumi Fries</li>
+                <li>Mini Sausage Rolls</li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h3>Mains</h3>
+            <ul>
+                <li>Slow-Roasted Lamb Shoulder</li>
+                <li>Honey-Glazed Gammon</li>
+                <li>Wild Mushroom & Truffle Pasta</li>
+                <li>Baked Salmon with Dill Cream</li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h3>Desserts</h3>
+            <ul>
+                <li>Mini Cheesecakes</li>
+                <li>Eton Mess Cups</li>
+                <li>Sticky Toffee Pudding</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="events" class="reveal">
+    <h2 class="section-title">Event & Private Catering — £22–£25 per guest</h2>
+    <div class="menu-grid">
+        <div class="menu-card">
+            <h3>Mains</h3>
+            <ul>
+                <li>Lemon & Thyme Roast Chicken</li>
+                <li>Slow-Braised Beef</li>
+                <li>Spinach & Ricotta Lasagne</li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h3>Sides</h3>
+            <ul>
+                <li>Rosemary Roast Potatoes</li>
+                <li>Seasonal Vegetables</li>
+                <li>Mixed Leaf Salad</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="reveal">
+    <h2 class="section-title">About Family Caterings</h2>
+    <div class="about">
+        We craft refined catering experiences designed around warmth, abundance and elegance.
+        Every dish is thoughtfully prepared using premium ingredients and traditional methods.
+        From our kitchen to your function — we create unforgettable celebrations.
+    </div>
+</section>
+
+<footer>
+    © 2026 Family Caterings — From our kitchen to your function
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

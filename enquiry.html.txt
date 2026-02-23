@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry | Family Caterings</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Family Caterings Logo">
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<div class="form-container">
+<h2 class="section-title">Make an Enquiry</h2>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<select name="event_type" required>
+<option value="">Event Type</option>
+<option>Wedding</option>
+<option>Birthday</option>
+<option>Corporate</option>
+<option>Private Event</option>
+</select>
+
+<input type="date" name="date" required>
+<input type="number" name="guests" placeholder="Number of Guests" required>
+
+<textarea name="message" rows="5" placeholder="Tell us about your event..."></textarea>
+
+<button type="submit">Submit Enquiry</button>
+
+</form>
+</div>
+
+<footer>
+© 2026 Family Caterings
+</footer>
+
+</body>
+</html>
