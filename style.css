@@ -1,8 +1,8 @@
 :root {
-  --primary: #6b4f3b;      /* Warm brown */
-  --accent: #c6a75e;       /* Soft gold */
-  --dark: #1f1f1f;         /* Deep charcoal */
-  --light: #f8f5ef;        /* Cream background */
+  --dark: #1f1f1f;
+  --gold: #c6a75e;
+  --cream: #f8f5ef;
+  --brown: #6b4f3b;
 }
 
 * {
@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--light);
+  background: var(--cream);
   color: var(--dark);
   line-height: 1.6;
 }
@@ -28,14 +28,18 @@ body {
   margin: auto;
 }
 
+.container.narrow {
+  max-width: 900px;
+}
+
 /* HEADER */
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   background: rgba(248,245,239,0.95);
-  backdrop-filter: blur(8px);
-  transition: 0.3s;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
   z-index: 1000;
 }
 
@@ -43,12 +47,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 18px 0;
 }
 
 .logo {
   height: 65px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .header.shrink .logo {
@@ -65,12 +69,12 @@ nav a {
 
 nav a::after {
   content: "";
+  position: absolute;
   width: 0;
   height: 2px;
-  background: var(--accent);
-  position: absolute;
-  bottom: -5px;
+  background: var(--gold);
   left: 0;
+  bottom: -6px;
   transition: 0.3s;
 }
 
@@ -79,8 +83,8 @@ nav a:hover::after {
 }
 
 .btn-nav {
-  border: 1px solid var(--accent);
-  padding: 6px 15px;
+  border: 1px solid var(--gold);
+  padding: 6px 16px;
   border-radius: 4px;
 }
 
@@ -88,18 +92,18 @@ nav a:hover::after {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(31,31,31,0.55), rgba(31,31,31,0.55)),
-              url('images/hero.jpg') center/cover fixed;
+              url('images/hero.jpg') center/cover no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 95px;
   padding: 20px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
   color: white;
   margin-bottom: 20px;
 }
@@ -110,16 +114,16 @@ nav a:hover::after {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--gold);
   color: white;
-  padding: 12px 28px;
+  padding: 12px 30px;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.3s;
 }
 
 .btn-primary:hover {
-  background: var(--primary);
+  background: var(--brown);
 }
 
 /* SECTIONS */
@@ -129,28 +133,27 @@ nav a:hover::after {
 }
 
 .section.alt {
-  background: #f0ebe2;
+  background: #f1ece4;
 }
 
 .section h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: var(--primary);
+  font-size: 2.4rem;
+  color: var(--brown);
 }
 
 .gold-line {
-  width: 80px;
+  width: 70px;
   height: 3px;
-  background: var(--accent);
+  background: var(--gold);
   margin: 20px auto 60px auto;
 }
 
 /* MENU IMAGE */
 .menu-image img {
   width: 100%;
-  max-width: 850px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
   transition: 0.4s ease;
 }
 
@@ -181,7 +184,7 @@ footer {
 /* MOBILE */
 @media (max-width: 768px) {
   .hero {
-    background-attachment: scroll;
+    height: 85vh;
   }
 
   nav a {
@@ -189,11 +192,11 @@ footer {
     font-size: 0.9rem;
   }
 
-  .section {
-    padding: 80px 0;
-  }
-
   .logo {
     height: 55px;
+  }
+
+  .section {
+    padding: 80px 0;
   }
 }
